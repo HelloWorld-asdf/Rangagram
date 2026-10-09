@@ -1,0 +1,371 @@
+.feed-wrapper {
+  display: flex;
+  gap: 64px;
+  width: 100%;
+  max-width: 900px;
+  padding: 32px 20px;
+  justify-content: center;
+}
+
+.feed-main {
+  width: 100%;
+  max-width: 470px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feed-sidebar {
+  width: 320px;
+  padding-top: 16px;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .feed-sidebar {
+    display: block;
+  }
+}
+
+.stories-container {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.story-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.story-ring {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.story-ring.user-story {
+  background: var(--border-color);
+}
+
+.story-ring img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid var(--bg-color);
+  object-fit: cover;
+}
+
+.story-username {
+  font-size: 12px;
+  color: var(--text-color);
+  max-width: 74px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post-item {
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 20px;
+}
+
+.post-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.post-avatar-wrapper {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.post-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--bg-color);
+}
+
+.post-options-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.post-username {
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.verified-badge {
+  width: 12px;
+  height: 12px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230095f6'><path d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1.9 14.7L6 12.6l1.5-1.5 2.6 2.6 6.4-6.4 1.5 1.5-7.9 7.9z'/></svg>");
+  background-size: cover;
+  margin-left: -4px;
+}
+
+.post-time {
+  color: var(--secondary-text);
+  font-size: 14px;
+}
+
+.post-image-container {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-image-container img {
+  width: 100%;
+  height: auto;
+  max-height: 585px;
+  object-fit: cover;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.action-left {
+  display: flex;
+  gap: 16px;
+}
+
+.icon-hover {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.icon-hover:hover {
+  opacity: 0.6;
+}
+
+.post-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.likes {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.caption {
+  font-size: 14px;
+}
+
+.caption-username {
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.add-comment {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.add-comment input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  font-size: 14px;
+  outline: none;
+}
+
+.add-comment button {
+  background: transparent;
+  border: none;
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-comment button:hover {
+  color: white;
+}
+
+/* Sidebar Styles */
+.user-profile-mini {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.user-profile-mini img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.user-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.user-text strong {
+  font-size: 14px;
+}
+
+.user-text span {
+  font-size: 14px;
+  color: var(--secondary-text);
+}
+
+.user-profile-mini button {
+  color: var(--accent-color);
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sug-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sug-header span {
+  color: var(--secondary-text);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.sug-header button {
+  color: var(--text-color);
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.sug-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sug-item img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.sug-initial {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #363636;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.sug-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sug-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.sug-text strong {
+  font-size: 14px;
+}
+
+.sug-text span {
+  font-size: 12px;
+  color: var(--secondary-text);
+}
+
+.sug-item button {
+  color: var(--accent-color);
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.sidebar-footer {
+  margin-top: 40px;
+  font-size: 12px;
+  color: var(--secondary-text);
+}
+
+.footer-links {
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.footer-links a {
+  color: var(--secondary-text);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-transform: uppercase;
+}
