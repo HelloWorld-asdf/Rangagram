@@ -74,7 +74,7 @@ export default function Feed() {
                <button>See all</button>
             </div>
             <div className="sug-item">
-               <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Sean_Combs_2010.jpg" alt="P Diddy" />
+               <img src="/media/diddy.png" alt="P Diddy" />
                <div className="sug-text">
                  <strong>P Diddy</strong>
                  <span>Suggested for you</span>
@@ -82,33 +82,9 @@ export default function Feed() {
                <button>Follow</button>
             </div>
             <div className="sug-item">
-               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Jeffrey_Epstein_by_Rick_Friedman.jpg/640px-Jeffrey_Epstein_by_Rick_Friedman.jpg" alt="Jeff Epstien" />
+               <img src="/media/epstien.png" alt="Jeff Epstien" />
                <div className="sug-text">
                  <strong>Jeff Epstien</strong>
-                 <span>Suggested for you</span>
-               </div>
-               <button>Follow</button>
-            </div>
-            <div className="sug-item">
-               <div className="sug-initial">T</div>
-               <div className="sug-text">
-                 <strong>Threshold Renewal</strong>
-                 <span>Suggested for you</span>
-               </div>
-               <button>Follow</button>
-            </div>
-            <div className="sug-item">
-               <img src="https://i.pravatar.cc/150?img=44" alt="user" />
-               <div className="sug-text">
-                 <strong>kayleeonthedaylee23</strong>
-                 <span>Suggested for you</span>
-               </div>
-               <button>Follow</button>
-            </div>
-            <div className="sug-item">
-               <div className="sug-icon"><UserIcon /></div>
-               <div className="sug-text">
-                 <strong>934ga_milcom</strong>
                  <span>Suggested for you</span>
                </div>
                <button>Follow</button>
