@@ -23,8 +23,8 @@ export const posts = [
 
 export const stories = [
   { id: 1, username: "Ruggednath", image: "/media/ranganath pfp.png", isUser: true },
-  { id: 2, username: "Mom", image: "/media/Screenshot 2026-10-09 225732.png" },
-  { id: 3, username: "Dad", image: "/media/Screenshot 2026-10-09 225753.png" },
+  { id: 2, username: "mummy", image: "/media/Screenshot 2026-10-09 225732.png" },
+  { id: 3, username: "daddy", image: "/media/Screenshot 2026-10-09 225753.png" },
 ];
 
 export const reels = [
