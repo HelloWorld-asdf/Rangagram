@@ -61,10 +61,10 @@ export default function Feed() {
       
       <div className="feed-sidebar">
          <div className="user-profile-mini">
-            <img src="https://i.pravatar.cc/150?img=11" alt="me" />
+            <img src="/media/ranganath pfp.png" alt="me" />
             <div className="user-text">
-               <strong>boringtp2026</strong>
-               <span>Boring</span>
+               <strong>Ruggednath</strong>
+               <span>Ruggednath</span>
             </div>
             <button>Switch</button>
          </div>
@@ -74,17 +74,17 @@ export default function Feed() {
                <button>See all</button>
             </div>
             <div className="sug-item">
-               <img src="https://i.pravatar.cc/150?img=12" alt="user" />
+               <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Sean_Combs_2010.jpg" alt="P Diddy" />
                <div className="sug-text">
-                 <strong>Arko</strong>
+                 <strong>P Diddy</strong>
                  <span>Suggested for you</span>
                </div>
                <button>Follow</button>
             </div>
             <div className="sug-item">
-               <img src="https://i.pravatar.cc/150?img=33" alt="user" />
+               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Jeffrey_Epstein_by_Rick_Friedman.jpg/640px-Jeffrey_Epstein_by_Rick_Friedman.jpg" alt="Jeff Epstien" />
                <div className="sug-text">
-                 <strong>syed dadapeer</strong>
+                 <strong>Jeff Epstien</strong>
                  <span>Suggested for you</span>
                </div>
                <button>Follow</button>

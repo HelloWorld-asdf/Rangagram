@@ -22,11 +22,9 @@ export const posts = [
 ];
 
 export const stories = [
-  { id: 1, username: "Your Story", image: "https://i.pravatar.cc/150?img=11", isUser: true },
-  { id: 2, username: "john_doe", image: "https://i.pravatar.cc/150?img=11" },
-  { id: 3, username: "jane_smith", image: "https://i.pravatar.cc/150?img=5" },
-  { id: 4, username: "mike_w", image: "https://i.pravatar.cc/150?img=8" },
-  { id: 5, username: "sarah_j", image: "https://i.pravatar.cc/150?img=9" },
+  { id: 1, username: "Ruggednath", image: "/media/ranganath pfp.png", isUser: true },
+  { id: 2, username: "Mom", image: "/media/Screenshot 2026-10-09 225732.png" },
+  { id: 3, username: "Dad", image: "/media/Screenshot 2026-10-09 225753.png" },
 ];
 
 export const reels = [
